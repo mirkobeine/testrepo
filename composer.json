@@ -1,0 +1,64 @@
+{
+    "name": "gggek/ezpublish-platform",
+    "description": "eZ Publish 5 Platform My distribution",
+    "version": "5.1.0-stable",
+    "homepage": "http://share.ez.no",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "eZ Publish dev-team & eZ Community",
+            "homepage": "https://github.com/ezsystems/ezpublish-community/contributors"
+        }
+    ],
+
+    "type": "metapackage",
+
+    "require": {
+        "php": ">=5.3.10",
+        "symfony/symfony": "2.2.*",
+        "symfony/assetic-bundle": "2.1.3",
+        "kriswallsmith/assetic": "v1.1.0-alpha4",
+        "symfony/monolog-bundle": "2.2.*",
+        "symfony/swiftmailer-bundle": "2.3.2",
+        "symfony-cmf/routing": "1.0.*",
+        "twig/extensions": "1.0.*",
+        "tedivm/stash-bundle": "dev-master#0baf224",
+        "sensio/generator-bundle": "2.2.*",
+        "egulias/listeners-debug-command-bundle": "1.4.*",
+        "zetacomponents/archive": "dev-master#4b2c4a1",
+        "zetacomponents/authentication": "dev-master#c422670",
+        "zetacomponents/authentication-database-tiein": "dev-master#56d1e0a",
+        "zetacomponents/base": "dev-master#642f63a",
+        "zetacomponents/cache": "dev-master#34fa794",
+        "zetacomponents/configuration": "dev-master#10ae09f",
+        "zetacomponents/console-tools": "dev-master#90156ab",
+        "zetacomponents/database": "dev-master#0e8ddef",
+        "zetacomponents/debug": "dev-master#0d8cc8f",
+        "zetacomponents/feed": "dev-master#e0190e9",
+        "zetacomponents/image-conversion": "dev-master#36f34c8",
+        "zetacomponents/mail": "dev-master#e0120aa",
+        "zetacomponents/mvc-tools": "dev-master#6f2c1eb",
+        "zetacomponents/mvc-authentication-tiein": "dev-master#9bae3a7",
+        "zetacomponents/persistent-object": "dev-master#a4c8b95",
+        "zetacomponents/php-generator": "dev-master#b51935e",
+        "zetacomponents/signal-slot": "dev-master#74deb41",
+        "zetacomponents/system-information": "dev-master#6743362",
+        "qafoo/rmf": "1.0.*",
+        "sensio/distribution-bundle": "~2.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "eZ": "vendor/ezsystems/ezpublish-kernel"
+        }
+    },
+    "config": {
+        "process-timeout": 3000
+    },
+    "extra": {
+        "symfony-app-dir": "ezpublish",
+        "symfony-web-dir": "web",
+        "branch-alias": {
+            "dev-master": "5.1.x-dev"
+        }
+    }
+}
