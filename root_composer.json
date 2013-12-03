@@ -1,0 +1,40 @@
+{
+    "name" : "gggeek/testsite",
+    "description": "A BIG website (and more to come)",
+    "version": "0.1.0",
+    "license": "GPL-2.0",
+    "type": "project",
+
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+
+    "require" : {
+        "php": ">=5.3.10",
+        "ext-http": "*",
+
+        "gggeek/ezpublish-platform": "dev-master",
+
+        "ezsystems/ezpublish-legacy-installer": "dev-master",
+
+        "mobiledetect/mobiledetectlib": "2.6.1",
+        "itbz/fpdi": "dev-master",
+        "oldsound/rabbitmq-bundle": "1.2.*"
+    },
+
+    "repositories" : [
+        {
+            "type": "git",
+            "url": "git@github.com:gggeek/testrepo.git"
+        }
+    ],
+
+    "config": {
+        "process-timeout": 3000
+    },
+
+    "extra": {
+        "symfony-app-dir": "ezpublish",
+        "symfony-web-dir": "web",
+        "ezpublish-legacy-dir": "ezpublish_legacy"
+    }
+}
